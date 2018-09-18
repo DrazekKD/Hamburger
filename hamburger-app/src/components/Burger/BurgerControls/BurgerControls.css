@@ -8,3 +8,29 @@
 	margin: auto;
 	padding: 10px 0;
 }
+
+.OrderButton {
+	width: 120px;
+	height: 50px;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #d6bb22;
+	font-weight: bold;
+	border: none;
+	transition: 0.2s all;
+}
+
+.OrderButton:hover{
+	box-shadow: 0 1px 2px  #d6bb22;
+	background-color: darkgoldenrod;
+	transform: translateY(1px);
+}
+.OrderButton:disabled {
+	background-color: burlywood;
+}
+
+.OrderButton:disabled:hover{
+	box-shadow:navajowhite;
+	transform: translateY(0);
+}
