@@ -17,14 +17,15 @@ const burgerControls = (props) => {
 					<BurgerControl
 						key={control.label}
 						label={control.label}
-						added={() => props.addedIngredients(control.type)}
+						added={() => props.addedIngredients(control.type)  }
 						reset={() => props.resetIngredient(control.type)}
 						disabled={props.disabled[control.type]}/>
 				)
 			)}
 			<button
 				className={classes.OrderButton}
-				disabled={!props.purchasable}>ORDER NOW</button>
+				disabled={!props.purchasable}
+				onClick={props.order}>ORDER NOW</button>
 		</div>
 	);
 };
