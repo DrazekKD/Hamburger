@@ -11,7 +11,6 @@ class Layout extends Component {
 
     sideDrawerCloseHandler = () => {
         this.setState({showSideDrawer: false});
-        console.log('clicked');
     };
 
     render() {
@@ -19,7 +18,7 @@ class Layout extends Component {
             <Aux>
                 <ToolBar/>
                 <SideDrawer
-                    closed={this.state.sideDrawerCloseHandler}
+                    closed={this.sideDrawerCloseHandler}
                     show={this.state.showSideDrawer}/>
                 <main className={classes.Content}>
                     {this.props.children}
