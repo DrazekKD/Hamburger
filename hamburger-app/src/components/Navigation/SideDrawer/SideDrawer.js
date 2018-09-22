@@ -4,6 +4,7 @@ import Logo from   '../../Logo/Logo';
 import NavigationItems from '../../Navigation/NavigationItems/NavigationItems';
 import Aux from '../../../hoc/Auxs'
 import Backdrop from '../../UI/Backdrop/Backdrop';
+import CloseButton from './CloseButton/CloseButton'
 
 const sideDrawer = (props) => {
 
@@ -16,6 +17,7 @@ const sideDrawer = (props) => {
         <Aux >
             <Backdrop show={props.show} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')}>
+                <CloseButton clicked={props.closed}/>
                 <div className={classes.Logo} onClick={props.closed}>
                     <Logo/>
                 </div>

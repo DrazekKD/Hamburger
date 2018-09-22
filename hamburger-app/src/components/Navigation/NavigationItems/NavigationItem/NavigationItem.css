@@ -33,12 +33,19 @@
     .item:hover,
     .item:active,
     .active {
+        background-color: #fff;
         color:  #40A4C8;
         border: none;
     }
 
     .link {
         color: #703B09;
+        transition: transform 0.3s ease-out;
+    }
+
+    .link:hover,
+    .link:active{
+        color: #40A4C8;
     }
 
     .active .link{

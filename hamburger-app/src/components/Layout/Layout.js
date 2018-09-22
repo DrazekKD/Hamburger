@@ -13,10 +13,14 @@ class Layout extends Component {
         this.setState({showSideDrawer: false});
     };
 
+    sideOpenCloseHandler = () => {
+        this.setState({showSideDrawer: true});
+    };
+
     render() {
         return(
             <Aux>
-                <ToolBar/>
+                <ToolBar open={this.sideOpenCloseHandler}/>
                 <SideDrawer
                     closed={this.sideDrawerCloseHandler}
                     show={this.state.showSideDrawer}/>
