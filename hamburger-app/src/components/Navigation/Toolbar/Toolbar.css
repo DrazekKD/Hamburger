@@ -1,5 +1,5 @@
 .Toolbar {
-	height: 56px;
+	height: 76px;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -15,4 +15,17 @@
 
 .Toolbar nav {
 	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.Logo {
+	width: 80px;
+}
+
+@media (max-width: 500px) {
+	.Toolbar nav {
+		display: none;
+	}
+
 }

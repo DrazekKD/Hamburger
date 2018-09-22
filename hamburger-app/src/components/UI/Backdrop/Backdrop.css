@@ -2,6 +2,7 @@
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
-	background-color: rgba(88,88,88, .2);
+	background-color: rgba(88,88,88, .6);
 	z-index: 100;
+    cursor: pointer;
 }

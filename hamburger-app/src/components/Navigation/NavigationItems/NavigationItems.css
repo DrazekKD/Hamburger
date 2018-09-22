@@ -1,0 +1,11 @@
+.Navigation {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+    .Navigation {
+        flex-direction: column;
+    }
+}
