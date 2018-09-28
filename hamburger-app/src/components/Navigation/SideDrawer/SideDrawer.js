@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './SideDrawer.css';
 import Logo from   '../../Logo/Logo';
 import NavigationItems from '../../Navigation/NavigationItems/NavigationItems';
-import Aux from '../../../hoc/Auxs'
+import Aux from '../../../hoc/Auxs/Auxs'
 import Backdrop from '../../UI/Backdrop/Backdrop';
 import CloseButton from './CloseButton/CloseButton'
 
